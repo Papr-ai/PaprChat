@@ -1,6 +1,6 @@
 # Papr Chat
 
-<a href="https://chat.papr.ai">
+<a href="https://platform.papr.ai/chat">
   <img alt="An open-source AI chatbot with memory capabilities powered by Papr and built on Next.js 14." src="app/(chat)/opengraph-image.png">
   <h1 align="center">Papr Chat</h1>
 </a>
@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://docs.papr.ai/chat"><strong>Documentation</strong></a> ·
+  <a href="https://platform.papr.ai/chat"><strong>Documentation</strong></a> ·
   <a href="#features"><strong>Features</strong></a> ·
   <a href="#model-providers"><strong>Model Providers</strong></a> ·
   <a href="#deploy-your-own"><strong>Deploy Your Own</strong></a> ·
@@ -21,7 +21,7 @@
 ## Features
 
 - **Memory-Powered Chat**
-  - Long-term memory for personalized chat experiences powered by [Papr](https://papr.ai)
+  - Long-term memory for personalized chat experiences powered by [Papr](https://platform.papr.ai)
   - Automatic storage and retrieval of relevant conversations
   - RAG (Retrieval-Augmented Generation) capabilities
   - Semantic search across conversation history
@@ -41,7 +41,7 @@
 
 ## About Papr Chat
 
-Papr Chat is maintained by [Papr](https://papr.ai) and builds upon [Vercel's V0 chatbot](https://github.com/vercel/ai-chatbot). We've enhanced the original template with our memory SDK to create chatbots that can maintain context across conversations and provide truly personalized experiences.
+Papr Chat is maintained by [Papr](https://platform.papr.ai) and builds upon [Vercel's V0 chatbot](https://github.com/vercel/ai-chatbot). We've enhanced the original template with our memory SDK to create chatbots that can maintain context across conversations and provide truly personalized experiences.
 
 The key enhancement is the integration of Papr's Memory SDK, which allows your chatbot to:
 - Remember past conversations and user preferences
@@ -62,7 +62,7 @@ Papr Chat ships with [xAI](https://x.ai) `grok-2-1212` as the default chat model
 You can deploy Papr Chat to Vercel with one click. Here's what you'll need:
 
 1. A [Papr](https://app.papr.ai) account for the memory features
-2. A database (we'll set up Neon automatically)
+2. A database (can set up Neon automatically via Vercel)
 3. An AI provider API key (xAI, OpenAI, Anthropic, etc.)
 
 Click the button below to clone and deploy:
@@ -76,7 +76,7 @@ Click the button below to clone and deploy:
 3. A Neon PostgreSQL database will be automatically provisioned
 4. Vercel Blob Storage will be set up for file uploads
 5. You'll be prompted to add the required environment variables:
-   - `PAPR_MEMORY_API_KEY`: Get this from [Papr Dashboard](https://app.papr.ai/settings/api-keys)
+   - `PAPR_MEMORY_API_KEY`: Get this from [Papr Dashboard](https://app.papr.ai/) -> Settings -> API Key
    - `AUTH_SECRET`: A random string for authentication (we'll generate one for you)
    - `OPENAI_API_KEY`: Your OpenAI API key (or another provider's key)
 
@@ -124,7 +124,7 @@ OPENAI_API_KEY=your_openai_api_key
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/papr/chat.git
+git clone https://github.com/Papr-ai/PaprChat 
 cd chat
 ```
 
@@ -150,6 +150,6 @@ Papr Chat is open-source software licensed under the MIT license.
 
 ## Support
 
-- Documentation: [docs.papr.ai/chat](https://docs.papr.ai/chat)
-- Discord: [Join our community](https://discord.gg/papr)
+- Documentation: [docs.papr.ai/chat](https://platform.papr.ai/overview)
+- Discord: [Join our community](https://discord.gg/tGzshWDg)
 - Issues: [GitHub Issues](https://github.com/papr/chat/issues)
