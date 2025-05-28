@@ -1,6 +1,6 @@
 # Papr Chat
 
-<a href="https://platform.papr.ai/chat">
+<a href="https://platform.papr.ai/papr-chat-template">
   <img alt="An open-source AI chatbot with memory capabilities powered by Papr and built on Next.js 14." src="app/(chat)/opengraph-image.png">
   <h1 align="center">Papr Chat</h1>
 </a>
@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://platform.papr.ai/chat"><strong>Documentation</strong></a> ·
+  <a href="https://platform.papr.ai/papr-chat-template"><strong>Documentation</strong></a> ·
   <a href="#features"><strong>Features</strong></a> ·
   <a href="#model-providers"><strong>Model Providers</strong></a> ·
   <a href="#deploy-your-own"><strong>Deploy Your Own</strong></a> ·
@@ -87,7 +87,7 @@ Click the button below to clone and deploy:
 3. Configure your AI provider settings in `config/ai.ts`
 4. Optionally customize the chat interface in `components/`
 
-For detailed setup instructions and customization options, visit our [deployment guide](https://docs.papr.ai/chat/deployment).
+For detailed setup instructions and customization options, visit our [deployment guide](https://platform.papr.ai/chat/papr-chat-template).
 
 ## Running locally
 
@@ -150,6 +150,6 @@ Papr Chat is open-source software licensed under the MIT license.
 
 ## Support
 
-- Documentation: [docs.papr.ai/chat](https://platform.papr.ai/overview)
+- Documentation: [platform.papr.ai/papr-chat-template](platform.papr.ai/papr-chat-template)
 - Discord: [Join our community](https://discord.gg/tGzshWDg)
 - Issues: [GitHub Issues](https://github.com/papr/chat/issues)
