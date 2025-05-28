@@ -9,7 +9,7 @@ import { cn } from '@/lib/utils';
 import 'react-data-grid/lib/styles.css';
 
 type SheetEditorProps = {
-  content: string;
+  content: string | null;
   saveContent: (content: string, isCurrentVersion: boolean) => void;
   status: string;
   isCurrentVersion: boolean;

@@ -1,5 +1,5 @@
 /**
- * Memory service for v0chat
+ * Memory service for PaprChat
  *
  * This service handles storing and retrieving chat memories using the Papr Memory SDK.
  */
@@ -118,7 +118,7 @@ export function createMemoryService(apiKey: string) {
         content,
         type: 'text' as MemoryType,
         metadata: {
-          source: 'v0chat',
+          source: 'PaprChat',
           user_id: userId,
           chatId,
           messageId: message.id,
@@ -203,7 +203,7 @@ export function createMemoryService(apiKey: string) {
         content,
         type: validatedType as MemoryType,
         metadata: {
-          source: 'v0chat',
+          source: 'PaprChat',
           user_id: userId,
           timestamp: new Date().toISOString(),
           ...enhancedMetadata,

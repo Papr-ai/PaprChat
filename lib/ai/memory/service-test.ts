@@ -1,5 +1,5 @@
 /**
- * Test script for the v0chat memory service
+ * Test script for the PaprChat memory service
  *
  * Run this script with: npx tsx lib/ai/memory/service-test.ts
  */
@@ -43,7 +43,7 @@ const API_BASE_URL =
   process.env.PAPR_MEMORY_API_URL || 'https://memory.papr.ai';
 
 async function runServiceTest() {
-  console.log('=== Testing v0chat Memory Service ===');
+  console.log('=== Testing PaprChat Memory Service ===');
   console.log(`API Key present: ${apiKey ? 'Yes' : 'No'}`);
   console.log(`Using API Base URL: ${API_BASE_URL}`);
 
@@ -67,7 +67,7 @@ async function runServiceTest() {
       external_id: `test-user-${testId}`,
       email: `test-${testId}@example.com`,
       metadata: {
-        source: 'v0chat-service-test',
+        source: 'PaprChat-service-test',
         testId,
       },
     });

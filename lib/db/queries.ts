@@ -66,12 +66,12 @@ export async function createUser(email: string, password: string) {
         });
 
         // Create a user in Papr Memory
-        const testId = `v0chat-${Date.now()}`;
+        const testId = `PaprChat-${Date.now()}`;
         const paprUserResponse = await paprClient.user.create({
-          external_id: `v0chat-user-${userId}`,
+          external_id: `PaprChat-user-${userId}`,
           email: email,
           metadata: {
-            source: 'v0chat',
+            source: 'PaprChat',
             app_user_id: userId,
           },
         });

@@ -1,5 +1,5 @@
 /**
- * Papr Memory SDK wrapper for v0chat
+ * Papr Memory SDK wrapper for PaprChat
  *
  * This module provides a simplified interface to the @papr/memory SDK
  * for storing, retrieving, and managing memory in AI applications.

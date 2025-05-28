@@ -18,7 +18,7 @@ interface SavedDocument {
 }
 
 // Cache key for saved pages
-const SAVED_PAGES_CACHE_KEY = 'v0chat_saved_pages';
+const SAVED_PAGES_CACHE_KEY = 'PaprChat_saved_pages';
 
 // Function to get cached pages
 const getCachedPages = (): SavedDocument[] | null => {

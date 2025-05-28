@@ -1,6 +1,6 @@
-# Papr Memory Integration for v0chat
+# Papr Memory Integration for PaprChat
 
-This module provides a comprehensive memory system for v0chat powered by the [@papr/memory](https://memory.papr.ai/) SDK. It enables storing and retrieving user messages to enhance AI responses with relevant context from past conversations.
+This module provides a comprehensive memory system for PaprChat powered by the [@papr/memory](https://memory.papr.ai/) SDK. It enables storing and retrieving user messages to enhance AI responses with relevant context from past conversations.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -14,7 +14,7 @@ This module provides a comprehensive memory system for v0chat powered by the [@p
 
 ## Overview
 
-Papr Memory is an end-to-end RAG (Retrieval-Augmented Generation) solution that combines vector embeddings and knowledge graphs. This integration enables v0chat to:
+Papr Memory is an end-to-end RAG (Retrieval-Augmented Generation) solution that combines vector embeddings and knowledge graphs. This integration enables PaprChat to:
 
 - Store user messages automatically
 - Retrieve relevant past conversations
@@ -127,10 +127,10 @@ const paprClient = initPaprMemory(process.env.PAPR_MEMORY_API_KEY);
 
 // Create a Papr user for your application user
 const userResponse = await paprClient.user.create({
-  external_id: `v0chat-user-${appUserId}`, // Use a consistent external ID based on your app's user ID
+  external_id: `PaprChat-user-${appUserId}`, // Use a consistent external ID based on your app's user ID
   email: userEmail, // Optional - user's email
   metadata: {
-    source: 'v0chat',
+    source: 'PaprChat',
     app_user_id: appUserId, // Optional store the application's user ID in metadata
   },
 });
@@ -154,7 +154,7 @@ const memoryParams: MemoryAddParams = {
   content: 'This is important information to remember',
   type: 'text',
   metadata: {
-    source: 'v0-app',
+    source: 'PaprChat',
     userId: 'papr-user-123', // Papr-generated user ID, not the application's user ID
     tags: ['important', 'information']
   }

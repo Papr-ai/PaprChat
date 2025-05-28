@@ -11,7 +11,7 @@ interface DocumentOpenerProps {
 }
 
 // Cache key prefix for documents
-const DOCUMENT_CACHE_KEY = 'v0chat_document_';
+const DOCUMENT_CACHE_KEY = 'PaprChat_document_';
 
 // Function to get cached document
 const getCachedDocument = (id: string) => {

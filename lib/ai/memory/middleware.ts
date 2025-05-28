@@ -1,5 +1,5 @@
 /**
- * Memory middleware for v0chat
+ * Memory middleware for PaprChat
  *
  * This middleware enhances chat interactions with memory capabilities.
  */
@@ -437,10 +437,10 @@ export async function ensurePaprUser(
 
     // Create a user in Papr Memory
     const paprUserResponse = await paprClient.user.create({
-      external_id: `v0chat-user-${userId}`,
+      external_id: `PaprChat-user-${userId}`,
       email: userEmail,
       metadata: {
-        source: 'v0chat',
+        source: 'PaprChat',
         app_user_id: userId,
       },
     });

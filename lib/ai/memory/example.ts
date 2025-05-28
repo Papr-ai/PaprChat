@@ -47,10 +47,10 @@ const createPaprUserExample = async (
   try {
     // Use the SDK's user.create method to create a Papr user
     const userResponse = await paprClient.user.create({
-      external_id: `v0chat-user-${appUserId}`, // Use a consistent external ID based on your app's user ID
+      external_id: `PaprChat-user-${appUserId}`, // Use a consistent external ID based on your app's user ID
       email: email, // User's email
       metadata: {
-        source: 'v0chat',
+        source: 'PaprChat',
         app_user_id: appUserId, // Store the application's user ID in metadata
       },
     });

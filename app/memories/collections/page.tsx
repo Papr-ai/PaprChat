@@ -31,8 +31,8 @@ interface ChatInfo {
 }
 
 // Cache key for collections
-const COLLECTIONS_CACHE_KEY = 'v0chat_collections';
-const CHATS_CACHE_KEY = 'v0chat_collection_chats';
+const COLLECTIONS_CACHE_KEY = 'PaprChat_collections';
+const CHATS_CACHE_KEY = 'PaprChat_collection_chats';
 
 // Function to get cached collections
 const getCachedCollections = (): Collection[] | null => {
